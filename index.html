@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hi Android Team</title>
+  <style type="text/css">
+    .centered {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .troll {
+      color: DarkGray;
+      font-size: 40px;
+    }
+  </style>
+  <script type="text/javascript">
+    function hide() {
+      document.getElementById("troll").style.display = 'none'
+      setTimeout(show, 1000)
+    }
+    function show() {
+      document.getElementById("troll").style.display = 'initial'
+      setTimeout(hide, 10)
+    }
+  </script>
+</head>
+<body bgcolor="#000000" onload="hide()">
+<div class="centered">
+  <span id="troll" class="troll">
+  Pineapple is the worst pizza topping
+  </span>
+</div>
+</body>
+</html>
